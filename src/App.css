@@ -1,0 +1,127 @@
+body {
+  /* overflow-y: hidden; Prevent body scroll */
+  margin: 0;
+  font-family: garamond, sans-serif;
+  background-color: #313131;  /* Original background color */
+  color: #222;   /* Original text color */
+  height: 100vh; /* Or adjust based on your preference */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure full viewport height */
+}
+
+/* Scroll Container */
+.scroll-container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh; /* Adjust 60px to accommodate header and footer height */
+}
+
+/* Section Styles */
+.section {
+  margin: 2vh;
+  border-radius: 25px;
+  height: 96vh;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center content horizontally */
+  transition: background-color 1s ease; 
+}
+
+/* Content Styles (General) */
+.content {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Home Section Specific Styles (Original) */
+.home .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative; /* For absolute positioning of footer-info */
+  width: 80%;
+  max-width: 1200px; /* Original max width */
+}
+
+
+
+.home .footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 20px;
+  left: 0; /* Adjusted position */
+  color: #222;
+}
+
+.home .footer-info > div {
+  margin-right: 30px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+
+.home .contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.home .contact a{
+    text-decoration: none;
+    color: inherit;
+}
+.home .location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* Example Section Colors */
+.home {
+  background-color: #cdcdcd;  /* Original background color */
+}
+
+.portfolio {
+  background-color: #d0d0d0;
+}
+
+.about {
+  background-color: #d0d0d0;
+}
+.contactsection{
+  background-color: #d0d0d0;
+}
+.contact {
+  background-color: #d0d0d000;
+}
+.Profession-name{
+  padding: 10px 0px;
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 0.9;
+  width: 100%; /* Take full width */
+  text-align: left; /* Left align the heading */
+}
+
+.rotating-word-container {
+  display: inline-block;
+  overflow: hidden; /* Crucial to clip the sliding content */
+  height: 1em;       /* Match the line height of the text (adjust as needed) */
+  position: relative;  /* Important for positioning motion.span */
+}
+
+.rotating-word {
+  display: inline-block; /* To allow width to be determined by content */
+  position: absolute; /*Allows to slide from top */
+  top: 0;
+  white-space: nowrap; /*Prevent line breaks*/
+}

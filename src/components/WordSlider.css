@@ -1,0 +1,19 @@
+.slider-container {
+    height: 60px; /* Match your word height */
+    overflow: hidden;
+  }
+  
+  .word-slider {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
+  
+  .word-slider li {
+    text-align: left;
+    height: 60px; /* Match container height */
+    display: flex;
+    padding: 10px 0;
+  }
