@@ -1,0 +1,45 @@
+/* ProjectsSection.css - Adjust for 4x5 grid */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.quad-grid {
+  display: grid;
+  width: 82.5%;
+  /* width:1200px; Adjust max width for 4x5 grid */
+  margin-bottom: 20px;
+  /* gridTemplateAreas, gridTemplateColumns, gridAutoRows, gap are set dynamically */
+}
+
+.project-item {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Add these two lines to override default link styles */
+  text-decoration: none;
+  color: #313131; /* Use your site's default dark text color */
+}
+
+/* The rest of the file remains the same, but for clarity, here's the full context */
+.project-item.tile-2x2, .project-item.tile-1x2, .project-item.tile-2x1,.project-item.tile-1x1   {
+  border: #d0d0d000 solid 2px;
+  background-color: #d0d0d0;
+  border-radius: 15px;
+}
+.project-item.tile-2x2:hover, .project-item.tile-1x2:hover, .project-item.tile-2x1:hover,.project-item.tile-1x1:hover{
+  border: #d0d0d0 solid 2px;
+  background-color: #313131;
+  color: #d0d0d0; /* This hover color is correct */
+  transition: all 0.3s ease;
+}
+.regenerate-button {
+  padding: 10px 20px;
+  cursor: pointer;
+}

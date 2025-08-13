@@ -8,17 +8,20 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="/">Projects</a>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="#projects-section">Projects</a>
           </li>
           <li>
             <a href="/">Contact</a>
           </li>
-          <li>
+          {/* <li>
             <a href="mailto:aniketvm1104@gmail.com" aria-label="Mail">Mail</a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a href="https://github.com/Aniike-t" aria-label="Github">Github</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

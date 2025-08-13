@@ -1,0 +1,62 @@
+[
+  {
+    "id": "artx3d",
+    "name": "ArtX3D",
+    "summary": "A Web-Based 3D Editor with an AI Assistant and Cloud Storage, designed to make 3D modeling accessible and intuitive for everyone.",
+    "problem_statement": "The project addresses the high barrier to entry in 3D modeling, which often requires complex, expensive software. ArtX3D provides a free, browser-based solution with AI-powered features to simplify the creative process.",
+    "media": [
+      { "type": "video", "url": "https://drive.google.com/file/d/10d2CQbPMDOIO-XqzQ-HjEZ5a82PkMHQg/view?usp=drive_link" }
+    ],
+    "technologies_used": ["React", "Three.js", "Flask", "OpenAI API", "AWS S3"],
+    "github_repo": "https://github.com/Aniike-t/Art_X_3D",
+    "layout": { "width": 2, "height": 2 }
+  },
+  {
+    "id": "cbir-vision-transformer",
+    "name": "CBIR with Vision Transformer",
+    "summary": "Retrieves visually similar images from a database based on content, utilizing a Vision Transformer (ViT) model and a hybrid Boolean & VSM ranking system.",
+    "problem_statement": "Traditional keyword-based image search is often inaccurate. This project implements a content-based image retrieval (CBIR) system that 'sees' the content of images, leading to more relevant search results.",
+    "media": [
+      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=CBIR+System+Interface" }
+    ],
+    "technologies_used": ["Python", "PyTorch", "Vision Transformer (ViT)", "Flask", "OpenCV"],
+    "github_repo": "https://github.com/Aniike-t/Content-based-Image-Retrieval",
+    "layout": { "width": 2, "height": 2 }
+  },
+  {
+    "id": "course-it",
+    "name": "Course.it",
+    "summary": "A mobile application designed for creating personalized and gamified learning tracks to make education more engaging and tailored to individual needs.",
+    "problem_statement": "One-size-fits-all learning paths can be demotivating. Course.it allows users to build custom learning journeys, track progress, and earn rewards, making learning a more interactive and personal experience.",
+     "media": [
+      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=Course.it+App+Mockup" }
+    ],
+    "technologies_used": ["Flutter", "Dart", "Firebase"],
+    "github_repo": "https://github.com/Aniike-t/Course.it",
+    "layout": { "width": 2, "height": 1 }
+  },
+  {
+    "id": "neural-style-transfer",
+    "name": "Neural Style Transfer",
+    "summary": "This project blends the content of images and videos with the artistic styles of famous paintings using VGG19 and CartoonGAN models.",
+    "problem_statement": "Creating artistic effects manually is time-consuming. This tool automates the process, allowing users to instantly apply any artistic style to their own photos and videos, creating unique visual content.",
+     "media": [
+      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=Style+Transfer+Example" }
+    ],
+    "technologies_used": ["Python", "TensorFlow", "VGG19", "CartoonGAN", "OpenCV"],
+    "github_repo": "https://github.com/Aniike-t/Style-Transfer",
+    "layout": { "width": 2, "height": 1 }
+  },
+  {
+    "id": "tanks-a-heat",
+    "name": "Tanks-a-heat",
+    "summary": "A fast-paced tank battle game developed in just 3 days for a game jam competition.",
+    "problem_statement": "The challenge was to rapidly prototype and develop a complete, playable game within a strict 72-hour time limit. The result is a fun, arcade-style game showcasing rapid development skills.",
+     "media": [
+      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=Tanks-a-heat+Gameplay" }
+    ],
+    "technologies_used": ["Unity", "C#"],
+    "github_repo": "https://aniike-t.itch.io/tanks-a-heat",
+    "layout": { "width": 1, "height": 2 }
+  }
+]

@@ -1,5 +1,5 @@
 .slider-container {
-    height: 60px; /* Match your word height */
+    height: 65px; /* Match your word height */
     overflow: hidden;
   }
   
@@ -13,7 +13,7 @@
   
   .word-slider li {
     text-align: left;
-    height: 60px; /* Match container height */
+    height: 65px; /* Match container height */
     display: flex;
     padding: 10px 0;
   }

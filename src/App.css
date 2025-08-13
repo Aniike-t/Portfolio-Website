@@ -5,7 +5,47 @@ body {
   background-color: #313131;  /* Original background color */
   color: #222;   /* Original text color */
   height: 100vh; /* Or adjust based on your preference */
+  cursor: none;
 }
+a{
+  cursor: none;
+}
+.custom-cursor {
+  width: 30px;
+  height: 30px;
+  background: rgba(126, 126, 126, 0.2);
+  border: #313131 solid 2px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+#cursor.active {
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: transform 0.2s ease;
+}
+#cursor.clicked {
+  transform: translate(-50%, -50%) scale(0.35);
+  transition: transform 0.1s ease;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translate(-50%, -50%) scale(1); background-color: #313131; border: #313131 solid 2px; box-shadow: 0 0 0 1px #313131;} 
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+}
+
+#cursor.fade-out {
+  animation: fadeOut 0.3s forwards;
+}
+
+
+
+
 
 .app {
   display: flex;
@@ -36,9 +76,10 @@ body {
 
 /* Content Styles (General) */
 .content {
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
+  
 }
 
 /* Home Section Specific Styles (Original) */
@@ -47,8 +88,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   position: relative; /* For absolute positioning of footer-info */
-  width: 80%;
+  width: 100%;
   max-width: 1200px; /* Original max width */
+  
 }
 
 
@@ -58,12 +100,13 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   left: 0; /* Adjusted position */
   color: #222;
 }
 
 .home .footer-info > div {
+  
   margin-right: 30px;
   margin-bottom: 10px;
   font-size: 0.8em;
@@ -79,21 +122,26 @@ body {
     text-decoration: none;
     color: inherit;
 }
-.home .location {
+.home .location , .github-homepage-btn{
     display: flex;
     align-items: center;
     gap: 5px;
 }
 /* Example Section Colors */
 .home {
-  background-color: #cdcdcd;  /* Original background color */
+  background-color: #d0d0d0;;  /* Original background color */
 }
 
 .portfolio {
-  background-color: #d0d0d0;
+  height: fit-content;
+  border-radius: 0px;
+  background-color: #d0d0d000;
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #d0d0d0;
 }
 .contactsection{
@@ -102,9 +150,23 @@ body {
 .contact {
   background-color: #d0d0d000;
 }
+.contact, .location,.github-homepage-btn{
+  border-radius: 14px;
+  margin-top: 20px;
+  padding: 15px 10px;
+  border: #222 solid 1px;
+}
+.contact:hover, .location:hover, .github-homepage-btn:hover{
+  background-color: #313131;
+  color : #d0d0d0;
+  transition: background-color 0.3s ease;
+}
+.github-homepage-btn,.contact{
+cursor: none;
+}
 .Profession-name{
   padding: 10px 0px;
-  font-size: 5em;
+  font-size: 6em;
   font-weight: bold;
   margin-bottom: 50px;
   line-height: 0.9;
