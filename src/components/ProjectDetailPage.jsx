@@ -47,8 +47,8 @@ function ProjectDetailPage() {
                     ))}
 
                     {project.media.map((item, index) => (
-                        item.type === 'video' ? 
-                        <video key={index} controls>
+                        item.type === 'video/mp4' ? 
+                        <video key={index} controls className="project-video">
                             <source src={item.url} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video> :

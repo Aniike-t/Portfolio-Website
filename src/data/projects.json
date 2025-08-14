@@ -5,15 +5,15 @@
     "summary": "A Web-Based 3D Editor with an AI Assistant and Cloud Storage, designed to make 3D modeling accessible and intuitive for everyone.",
     "problem_statement": "The project addresses the high barrier to entry in 3D modeling, which often requires complex, expensive software. ArtX3D provides a free, browser-based solution with AI-powered features to simplify the creative process.",
     "media": [
-      { "type": "video", "url": "https://drive.google.com/file/d/10d2CQbPMDOIO-XqzQ-HjEZ5a82PkMHQg/view?usp=drive_link" }
+      { "type": "video/mp4", "url": "/CompressedArtX3D.mp4" }
     ],
-    "technologies_used": ["React", "Three.js", "Flask", "OpenAI API", "AWS S3"],
+    "technologies_used": ["React", "Three.js", "Python", "Flask", "Gemini API", "AWS", "Supabase", "PostgreSQL", "Cloudflare"],
     "github_repo": "https://github.com/Aniike-t/Art_X_3D",
     "layout": { "width": 2, "height": 2 }
   },
   {
     "id": "cbir-vision-transformer",
-    "name": "CBIR with Vision Transformer",
+    "name": "Content Based Image Retrieval with Vision Transformer",
     "summary": "Retrieves visually similar images from a database based on content, utilizing a Vision Transformer (ViT) model and a hybrid Boolean & VSM ranking system.",
     "problem_statement": "Traditional keyword-based image search is often inaccurate. This project implements a content-based image retrieval (CBIR) system that 'sees' the content of images, leading to more relevant search results.",
     "media": [
@@ -29,9 +29,9 @@
     "summary": "A mobile application designed for creating personalized and gamified learning tracks to make education more engaging and tailored to individual needs.",
     "problem_statement": "One-size-fits-all learning paths can be demotivating. Course.it allows users to build custom learning journeys, track progress, and earn rewards, making learning a more interactive and personal experience.",
      "media": [
-      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=Course.it+App+Mockup" }
+      { "type": "video/mp4", "url": "" }
     ],
-    "technologies_used": ["Flutter", "Dart", "Firebase"],
+    "technologies_used": ["React Native", "Expo", "Vercel", "Flask", "Python", "MongoDB"],
     "github_repo": "https://github.com/Aniike-t/Course.it",
     "layout": { "width": 2, "height": 1 }
   },
@@ -55,7 +55,7 @@
      "media": [
       { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=Tanks-a-heat+Gameplay" }
     ],
-    "technologies_used": ["Unity", "C#"],
+    "technologies_used": ["HTML5", "JavaScript", "CSS"],
     "github_repo": "https://aniike-t.itch.io/tanks-a-heat",
     "layout": { "width": 1, "height": 2 }
   }
