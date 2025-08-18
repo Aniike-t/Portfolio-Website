@@ -6,19 +6,24 @@ import { MdLocationOn, MdEmail } from 'react-icons/md';
 import WordSlider from './components/WordSlider';
 import ProjectsSection from './components/ProjectSection.jsx';
 import AboutMe from './components/About.jsx';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import ProjectDetailPage from './components/ProjectDetailPage';
 import ScrollToTop from './components/ScrollToTop';
+import Analytics from './components/Analytics.jsx';
+import Experience from './components/Experience.jsx'; 
 
-// This component contains your original single-page layout
+
 const PortfolioLayout = () => {
   const words = ['Software Developer', 'Web Developer', 'Interested In Research', 'AI & ML Enthusiast', 'Philomath'];
   const words2 = [...words, ...words];
 
   return (
     <div className="app">
+
       <Header />
-      <div className="scroll-container">
+      <Analytics />
+      
+      <div className="scroll-container</div>">
         <section className="section home">
           <div className="content">
             <h1 className="Profession-name">
@@ -43,6 +48,10 @@ const PortfolioLayout = () => {
                 <FaGithub />
                 Github
               </div>
+              <div className="github-homepage-btn footer-btn" onClick={() => window.location.href = 'https://www.linkedin.com/in/aniket-mahajan-275305243/'} >
+                <FaLinkedin />
+                LinkedIn
+              </div>
             </div>
           </div>
         </section>
@@ -59,10 +68,9 @@ const PortfolioLayout = () => {
           </div>
         </section>
 
-        <section id="contact" className="section contactsection">
-          <div className="content">
-            <h2>Contact Me</h2>
-            <p>Get in touch with me!</p>
+        <section className="section contactsection">
+          <div className="content" id="experience-section">
+            <Experience />
           </div>
         </section>
       </div>
@@ -147,7 +155,9 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/project/:projectId" element={<ProjectDetailPage />} />
+        <Route path="/" element={<PortfolioLayout />} />
         <Route path="/*" element={<PortfolioLayout />} />
+        <Route path="*" element={<PortfolioLayout />} />
       </Routes>
     </>
   );

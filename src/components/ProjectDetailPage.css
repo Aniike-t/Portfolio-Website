@@ -58,7 +58,8 @@ body {
 }
 
 .media-gallery img {
-    width: 100%;
+    padding:10px;
+    /* width: 100%; */
     border-radius: 15px;
     margin-bottom: 1rem;
 }
@@ -107,8 +108,8 @@ body {
 }
 
 .project-video{
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }

@@ -10,7 +10,7 @@ const AboutMe = () => {
     { name: 'React', icon: <FaReact /> },
     { name: 'Python', icon: <FaPython /> },
     { name: 'Flask', icon: <SiFlask /> },
-    { name: 'AWS', icon: <MdCloud /> },
+    { name: 'Cloud', icon: <MdCloud /> },
     { name: 'AI ML', icon: <GiBrain /> },
     { name: 'Fullstack', icon: <MdComputer /> }
   ];
@@ -40,10 +40,7 @@ const AboutMe = () => {
               {/* <span className="academic-icon"><MdSettingsInputAntenna /></span> */}
               Minor in Artificial Intelligence & Machine Learning
             </li>
-            <li>
-              {/* <span className="academic-icon"><MdSettingsInputAntenna /></span> */}
-              Passionate about Emerging Technologies
-            </li>
+
           </ul>
         </div>
       </div>
@@ -51,7 +48,6 @@ const AboutMe = () => {
       {/* Right Column: Technologies */}
       <div className="technologies-section">
         <h2>Technologies I Work With</h2>
-
         <div className="tech-grid tech-grid-btns">
           {technologies.map((tech, index) => (
             <div key={index} className="tech-badge">

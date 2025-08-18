@@ -1,3 +1,5 @@
 Flask
-psycopg2-binary
 requests
+psycopg2-binary
+Flask-Cors
+python-dotenv  

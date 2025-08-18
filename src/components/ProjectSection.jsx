@@ -20,7 +20,7 @@ function ProjectsSection() {
         projectLayouts: []
     });
     const containerRef = useRef(null); 
-    const gridSize = { rows: 5, cols: 5 };
+    const gridSize = { rows: 3, cols: 5 };
 
     // ... (The entire layout generation logic from your original file remains unchanged)
     // useEffect, generateQuadGridLayout, initTileGridArray, etc. are all the same.

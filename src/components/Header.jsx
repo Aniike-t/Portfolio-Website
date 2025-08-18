@@ -8,13 +8,13 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="/">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#projects-section">Projects</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="#experience-section">Experience</a>
           </li>
           {/* <li>
             <a href="mailto:aniketvm1104@gmail.com" aria-label="Mail">Mail</a>

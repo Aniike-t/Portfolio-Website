@@ -6,6 +6,7 @@ body {
   color: #222;   /* Original text color */
   height: 100vh; /* Or adjust based on your preference */
   cursor: none;
+  overflow-x: hidden;
 }
 a{
   cursor: none;
@@ -62,8 +63,12 @@ a{
 
 /* Section Styles */
 .section {
+  /* margin-top: 2vh; */
   margin: 2vh;
   border-radius: 25px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  /* width: 98vw; Adjusted to fit within the container */
   height: 96vh;
   scroll-snap-type: y mandatory;
   display: flex;
@@ -72,6 +77,7 @@ a{
   align-items: center;
   text-align: center; /* Center content horizontally */
   transition: background-color 1s ease; 
+  overflow-x: hidden;
 }
 
 /* Content Styles (General) */
@@ -90,7 +96,6 @@ a{
   position: relative; /* For absolute positioning of footer-info */
   width: 100%;
   max-width: 1200px; /* Original max width */
-  
 }
 
 
@@ -106,7 +111,6 @@ a{
 }
 
 .home .footer-info > div {
-  
   margin-right: 30px;
   margin-bottom: 10px;
   font-size: 0.8em;

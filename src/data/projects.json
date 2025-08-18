@@ -5,7 +5,7 @@
     "summary": "A Web-Based 3D Editor with an AI Assistant and Cloud Storage, designed to make 3D modeling accessible and intuitive for everyone.",
     "problem_statement": "The project addresses the high barrier to entry in 3D modeling, which often requires complex, expensive software. ArtX3D provides a free, browser-based solution with AI-powered features to simplify the creative process.",
     "media": [
-      { "type": "video/mp4", "url": "/CompressedArtX3D.mp4" }
+      { "type": "video/mp4", "url": "https://mafuscruvmcbdlvmepvx.supabase.co/storage/v1/object/public/PortfolioWebsite/ArtX3D/compressedArtX3D.mp4" }
     ],
     "technologies_used": ["React", "Three.js", "Python", "Flask", "Gemini API", "AWS", "Supabase", "PostgreSQL", "Cloudflare"],
     "github_repo": "https://github.com/Aniike-t/Art_X_3D",
@@ -17,9 +17,11 @@
     "summary": "Retrieves visually similar images from a database based on content, utilizing a Vision Transformer (ViT) model and a hybrid Boolean & VSM ranking system.",
     "problem_statement": "Traditional keyword-based image search is often inaccurate. This project implements a content-based image retrieval (CBIR) system that 'sees' the content of images, leading to more relevant search results.",
     "media": [
-      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=CBIR+System+Interface" }
+      { "type": "image", "url": "https://mafuscruvmcbdlvmepvx.supabase.co/storage/v1/object/public/PortfolioWebsite/CBIR/image.png" ,"width": "100%", "height":"auto" },
+      { "type": "image", "url": "https://mafuscruvmcbdlvmepvx.supabase.co/storage/v1/object/public/PortfolioWebsite/CBIR/cbir_flowchart.png" , "height": "auto", "width": "45%" },
+      { "type": "image", "url": "https://mafuscruvmcbdlvmepvx.supabase.co/storage/v1/object/public/PortfolioWebsite/CBIR/queryProcessing.png" , "height": "auto", "width": "45%" }
     ],
-    "technologies_used": ["Python", "PyTorch", "Vision Transformer (ViT)", "Flask", "OpenCV"],
+    "technologies_used": ["Python", "PyTorch", "Vision Transformer (ViT)", "Flask", "OpenCV", "SQL", "Inverted Index", "Boolean Retrieval", "Vector Space Model (VSM)", "Custom Hybrid Algorithm"],
     "github_repo": "https://github.com/Aniike-t/Content-based-Image-Retrieval",
     "layout": { "width": 2, "height": 2 }
   },
@@ -29,7 +31,7 @@
     "summary": "A mobile application designed for creating personalized and gamified learning tracks to make education more engaging and tailored to individual needs.",
     "problem_statement": "One-size-fits-all learning paths can be demotivating. Course.it allows users to build custom learning journeys, track progress, and earn rewards, making learning a more interactive and personal experience.",
      "media": [
-      { "type": "video/mp4", "url": "" }
+      { "type": "video/mp4", "url": "https://mafuscruvmcbdlvmepvx.supabase.co/storage/v1/object/public/PortfolioWebsite/CourseIT/v3demo.mp4", "height": "auto", "width": 300 }
     ],
     "technologies_used": ["React Native", "Expo", "Vercel", "Flask", "Python", "MongoDB"],
     "github_repo": "https://github.com/Aniike-t/Course.it",
@@ -41,7 +43,7 @@
     "summary": "This project blends the content of images and videos with the artistic styles of famous paintings using VGG19 and CartoonGAN models.",
     "problem_statement": "Creating artistic effects manually is time-consuming. This tool automates the process, allowing users to instantly apply any artistic style to their own photos and videos, creating unique visual content.",
      "media": [
-      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=Style+Transfer+Example" }
+      { "type": "video/mp4", "url": "https://mafuscruvmcbdlvmepvx.supabase.co/storage/v1/object/public/PortfolioWebsite/NeuralStyleTransfer/styleTransfer.mp4", "width": "100%", "height":"auto" }
     ],
     "technologies_used": ["Python", "TensorFlow", "VGG19", "CartoonGAN", "OpenCV"],
     "github_repo": "https://github.com/Aniike-t/Style-Transfer",
@@ -53,7 +55,7 @@
     "summary": "A fast-paced tank battle game developed in just 3 days for a game jam competition.",
     "problem_statement": "The challenge was to rapidly prototype and develop a complete, playable game within a strict 72-hour time limit. The result is a fun, arcade-style game showcasing rapid development skills.",
      "media": [
-      { "type": "image", "url": "https://via.placeholder.com/800x450.png?text=Tanks-a-heat+Gameplay" }
+      { "type": "image", "url": "https://mafuscruvmcbdlvmepvx.supabase.co/storage/v1/object/public/PortfolioWebsite/TanksAHeat/gamelogotah.png", "width": "30%", "height":"auto" }
     ],
     "technologies_used": ["HTML5", "JavaScript", "CSS"],
     "github_repo": "https://aniike-t.itch.io/tanks-a-heat",
