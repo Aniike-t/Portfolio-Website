@@ -1,0 +1,27 @@
+.slider-container {
+    height: clamp(3.5rem, 11vw, 8.5rem);
+    overflow: hidden;
+    display: inline-flex;
+    vertical-align: bottom;
+}
+
+.word-slider {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.word-slider li {
+    text-align: center;
+    height: clamp(3.5rem, 11vw, 8.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #fff, #9aa0a6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

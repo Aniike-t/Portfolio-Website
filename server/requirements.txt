@@ -1,5 +1,6 @@
 Flask
+Flask-Caching
 requests
 psycopg2-binary
 Flask-Cors
-python-dotenv  
+python-dotenv
