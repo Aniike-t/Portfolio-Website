@@ -27,3 +27,4 @@ dist-ssr
 *.cpython
 server/__pycache__
 .vercel
+.env*.local
