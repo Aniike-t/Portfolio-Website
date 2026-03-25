@@ -5,7 +5,9 @@
 }
 
 @media (max-width: 768px) {
-    .gaming-section { padding-top: 0 !important; }
+    .gaming-section {
+        padding-top: 0 !important;
+    }
 }
 
 
@@ -82,6 +84,11 @@
     color: var(--text-secondary);
 }
 
+.tile-media img {
+
+    border-radius: 20px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1100px) {
     .gaming-flex-container {
@@ -89,6 +96,7 @@
         gap: 60px;
         margin-top: 40px;
     }
+
     .gaming-flex-item {
         width: 100%;
     }
@@ -96,53 +104,66 @@
 
 @media (max-width: 768px) {
     .gaming-section {
-        padding: 0; 
+        padding: 0;
     }
+
     .gaming-flex-container {
         margin-top: 20px;
         gap: 40px;
     }
-    .game-intro h3, .games-list-container h3 {
+
+    .game-intro h3,
+    .games-list-container h3 {
         font-size: 1.6rem;
         margin-bottom: 12px;
     }
+
     .game-intro p {
         font-size: 1rem;
     }
+
     .small-games-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
+
     .small-game-tile {
         padding: 12px;
         border-radius: 16px;
     }
+
     .small-game-tile h4 {
         font-size: 0.95rem;
     }
+
     .tile-media {
         aspect-ratio: 16 / 9;
         margin-bottom: 8px;
-        border-radius: 8px;
+        border-radius: 20px;
         overflow: hidden;
     }
+
     .tile-media img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 20px;
     }
+
     .game-tech-tags {
-        display: none; /* Hide tags in grid on mobile to save space */
+        display: none;
+        /* Hide tags in grid on mobile to save space */
     }
 }
 
 @media (max-width: 480px) {
+
     /* Tighten Gameboy case */
     .gb-case {
         transform: scale(0.6) !important;
-        margin: -100px auto !important; 
+        margin: -100px auto !important;
     }
-    
+
     .mini-game-container {
         min-height: 380px;
         display: flex;
@@ -150,6 +171,7 @@
         justify-content: center;
         align-items: center;
     }
+
     .game-intro {
         text-align: center;
         margin-bottom: 20px;

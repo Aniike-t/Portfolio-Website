@@ -4,3 +4,5 @@ client/__pycache__
 server/vercel.json
 client/node_modules
 *.pyc
+server/blueprints/__pycache__
+server/__pycache__

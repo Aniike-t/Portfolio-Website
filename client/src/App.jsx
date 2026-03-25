@@ -14,6 +14,8 @@ import Experience from './components/Experience.jsx';
 import GamingSection from './components/GamingSection.jsx';
 import GrepNowSection from './components/GrepNowSection.jsx';
 import GitHubActivity from './components/GitHubActivity';
+import ContactSection from './components/ContactSection';
+import ScrollIndicator from './components/ScrollIndicator';
 
 
 const PortfolioLayout = () => {
@@ -118,16 +120,28 @@ const PortfolioLayout = () => {
 
         <GrepNowSection />
 
+        <section id="contact" className="section contact-final">
+          <div className="content">
+            <ContactSection />
+          </div>
+        </section>
+
       </div>
+      <ScrollIndicator />
     </div>
   );
 };
 
 
+
 function App() {
   useEffect(() => {
+    // Only run cursor logic on desktop
+    if (window.innerWidth <= 768) return;
+
     const cursor = document.getElementById('cursor');
     if (!cursor) return;
+
 
     let mouseX = 0, mouseY = 0, currX = 0, currY = 0;
 

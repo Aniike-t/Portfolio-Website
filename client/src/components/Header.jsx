@@ -27,9 +27,10 @@ function Header() {
       </nav>
 
       <div className="header-actions">
-        <button className="register-btn header-cta" onClick={() => window.location.href = 'mailto:aniketvm1104@gmail.com'}>
+        <button className="register-btn header-cta" onClick={() => window.location.href = '#contact'}>
           Let's Talk
         </button>
+
 
         <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle Navigation">
           {isMenuOpen ? <FaTimes /> : <FaBars />}

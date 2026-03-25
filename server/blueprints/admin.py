@@ -38,8 +38,9 @@ def messages_return():
     
     conn = get_db()
     cur = conn.cursor()
-    cur.execute("SELECT ip, location, message, created_at FROM messages ORDER BY created_at DESC;")
+    cur.execute("SELECT ip, location, name, email, mobile, message, created_at FROM messages ORDER BY created_at DESC;")
     columns = [desc[0] for desc in cur.description]
     messages = [dict(zip(columns, row)) for row in cur.fetchall()]
     cur.close()
     return jsonify({"messages": messages})
+

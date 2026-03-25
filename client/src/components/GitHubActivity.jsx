@@ -20,7 +20,7 @@ const GitHubActivity = () => {
     });
 
     if (isLoading) return <div className="gh-heatmap-sync">Syncing commits...</div>;
-    
+
     if (isError) {
         return (
             <div className="github-heatmap-container error-state">
@@ -29,7 +29,7 @@ const GitHubActivity = () => {
         );
     }
 
-    
+
     return (
         <div className="github-heatmap-container fade-in">
             <div className="gh-heatmap-header">
@@ -42,12 +42,13 @@ const GitHubActivity = () => {
 
             <div className="heatmap-scroll-area">
                 <div className="heatmap-wrapper">
-                    {calendar.weeks.map((week, wIdx) => (
+                    {/* Reversed to show latest weeks on the left */}
+                    {calendar.weeks.slice().reverse().map((week, wIdx) => (
                         <div key={wIdx} className="heatmap-week">
                             {week.contributionDays.map((day, dIdx) => (
-                                <div 
-                                    key={dIdx} 
-                                    className="heatmap-day" 
+                                <div
+                                    key={dIdx}
+                                    className="heatmap-day"
                                     style={{ '--day-color': day.color }}
                                     data-count={day.contributionCount}
                                     title={`${day.contributionCount} commits on ${day.date}`}

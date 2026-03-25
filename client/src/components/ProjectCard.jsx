@@ -51,7 +51,7 @@ function ProjectCard({ project }) {
 
       <div className="card-content-v2">
         <div className="card-top">
-            <span className="project-id">#{project.id}</span>
+            {/* <span className="project-id">#{project.id}</span> */}
             <div className="tech-pills">
                 {project.technologies_used?.slice(0, 3).map((tech, i) => (
                     <span key={i} className="tech-pill">{tech}</span>

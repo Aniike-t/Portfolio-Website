@@ -1,6 +1,6 @@
 .about-container-v2 {
     width: 100%;
-    padding: 80px 0;
+    padding: 40px 0;
     position: relative;
     overflow: hidden;
 }
@@ -9,9 +9,9 @@
 
 
 .about-header-section {
-    max-width: 900px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
 
 .io-subtitle {
     font-size: 0.95rem;
@@ -33,21 +33,41 @@
 
 
 
+.about-intro-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 44px;
+    padding: 40px;
+}
+
 .io-description {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: var(--text-secondary);
     line-height: 1.6;
     font-weight: 300;
-    max-width: 800px;
 }
+
 
 
 
 .about-content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 24px;
 }
+
+.about-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 1100px) {
+    .about-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* Card System */
 .about-card {
@@ -118,7 +138,7 @@
 .skills-bento {
     background: rgba(255, 255, 255, 0.02);
     border-radius: 40px;
-    padding: 60px;
+    padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -144,6 +164,11 @@
     .skill-group h4 {
         font-size: 0.7rem;
         margin-bottom: 0.8rem;
+    }
+
+    .about-intro-card {
+        border-radius: 10px;
+        padding: 20px;
     }
 }
 
@@ -208,6 +233,11 @@
     .s-icon {
         font-size: 1rem;
     }
+
+    .about-intro-card {
+        border-radius: 10px;
+        padding: 20px;
+    }
 }
 
 
@@ -230,6 +260,11 @@
         flex-direction: column;
         gap: 50px;
         padding: 50px;
+    }
+
+    .about-intro-card {
+        border-radius: 10px;
+        padding: 20px;
     }
 }
 
@@ -268,6 +303,11 @@
     .academic-grid {
         gap: 16px;
     }
+
+    .about-intro-card {
+        border-radius: 10px;
+        padding: 20px;
+    }
 }
 
 
@@ -284,5 +324,10 @@
 
     .skill-group {
         min-width: 100%;
+    }
+
+    .about-intro-card {
+        border-radius: 10px;
+        padding: 20px;
     }
 }
