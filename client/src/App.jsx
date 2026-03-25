@@ -13,6 +13,7 @@ import Analytics from './components/Analytics.jsx';
 import Experience from './components/Experience.jsx';
 import GamingSection from './components/GamingSection.jsx';
 import GrepNowSection from './components/GrepNowSection.jsx';
+import GitHubActivity from './components/GitHubActivity';
 
 
 const PortfolioLayout = () => {
@@ -44,7 +45,7 @@ const PortfolioLayout = () => {
             </div>
             <span className="header-aniket">Hello, I'm Aniket Mahajan</span>
             <h1 className="Profession-name">
-              Full Stack NLP Engineer
+              Full Stack NLP Developer
             </h1>
 
             <div className="google-dots-hero">
@@ -92,20 +93,29 @@ const PortfolioLayout = () => {
 
         {/* PORTFOLIO SECTION */}
         <section id="projects" className="section portfolio">
-          <ProjectsSection />
-        </section>
-
-        {/* GAMING SECTION */}
-        <section className="section bg-secondary">
-          <GamingSection />
+          <div className="content">
+            <ProjectsSection />
+          </div>
         </section>
 
         {/* EXPERIENCE SECTION */}
         <section id="experience" className="section contactsection">
           <div className="content" id="experience-section">
             <Experience />
+            <GitHubActivity />
           </div>
         </section>
+
+        {/* GAMING SECTION */}
+        <section className="section bg-secondary">
+          <div className="content">
+            <GamingSection />
+          </div>
+        </section>
+
+
+
+
         <GrepNowSection />
 
       </div>

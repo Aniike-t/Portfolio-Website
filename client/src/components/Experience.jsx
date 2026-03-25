@@ -9,7 +9,7 @@ const experiences = [
     company: 'Larsen & Toubro',
     date: 'Nov 2025 - Present',
     duration: '5 mos',
-    location: 'Mumbai, Maharashtra, India · On-site',
+    location: 'Mumbai, India · On-site',
     unit: 'PES - Research and Development',
     description: [
       'Developed a cross-platform map communication application from scratch, adhering to DRDO requirements. Features include geofencing, geospatial computations, intranet map server, and real-time communication.',
@@ -17,14 +17,14 @@ const experiences = [
       'Implemented robust REST APIs and WebSockets for low-latency communication.',
       'Optimized data serialization using zigzag varints and geospatial indexing with H3 & S2 for high-performance intranet systems.'
     ],
-    tech: ['React Native', 'WebSockets', 'H3/S2', 'Geospatial Indexing', 'System Design', 'Intranet Systems']
+    tech: ['Python', 'Django', 'Flutter', 'Dart', 'REST APIs', 'WebSockets', 'H3/S2', 'Geospatial Indexing', 'System Design', 'Docker', 'GIS']
   },
   {
     role: 'Project Trainee',
     company: 'Bhabha Atomic Research Centre (BARC)',
     date: 'June 2024 - July 2024',
     duration: '2 mos',
-    location: 'Mumbai, India · On-site',
+    location: 'Mumbai - Trombay, India · On-site',
     unit: 'Survey Management Systems',
     description: [
       'Engineered a Survey Management System using PHP, MySQL, JavaScript, and Bootstrap to develop and integrate web-based workflows.',
@@ -44,9 +44,9 @@ const Experience = () => {
 
       <div className="experience-header-io">
         <div className="header-left">
-           <span className="section-subtitle">JOURNEY</span>
-           <h1 className="section-title">Professional <span className="gradient-text">Experience</span></h1>
-           <div className="section-line"></div>
+          <span className="section-subtitle">JOURNEY</span>
+          <h1 className="section-title">Professional <span className="gradient-text">Experience</span></h1>
+          <div className="section-line"></div>
         </div>
         <a href="/resume.pdf" download="Aniket_Mahajan_Resume.pdf" className="resume-btn-io">
           <FaDownload /> <span>Download CV</span>
@@ -63,7 +63,7 @@ const Experience = () => {
                 </div>
                 <div>
                   <h3>{exp.role}</h3>
-                  <p className="company-name">{exp.company} <span className="unit-tag">• {exp.unit}</span></p>
+                  <p className="company-name">{exp.company} </p>
                 </div>
               </div>
               <div className="date-location">
@@ -71,7 +71,7 @@ const Experience = () => {
                 <span className="exp-loc">{exp.location}</span>
               </div>
             </div>
-
+            <span className="unit-tag">{exp.unit}</span>
             <div className="card-body">
               <ul className="description-list">
                 {exp.description.map((point, i) => (
@@ -85,7 +85,7 @@ const Experience = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className="card-footer-accent" style={{ background: index === 0 ? 'var(--google-blue)' : 'var(--google-green)' }}></div>
           </div>
         ))}

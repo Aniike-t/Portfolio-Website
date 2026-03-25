@@ -51,9 +51,9 @@ const AboutMe = () => {
   return (
     <div className="about-container-v2 fade-in">
       <div className="about-header-section">
-        <h1 className="io-title">Engineering <span className="gradient-text">Intelligence</span></h1>
+        <h1 className="io-title">Engineering <span className="gradient-text"></span></h1>
         <p className="io-description">
-          A Full-stack Developer and AI Researcher focused on bridging technical complexity with scalable architecture. 
+          A Full-stack Developer and AI Researcher focused on bridging technical complexity with scalable architecture.
           Currently specializing in Large Language Models (LLMs) and distributed systems.
         </p>
       </div>
@@ -61,8 +61,8 @@ const AboutMe = () => {
       <div className="about-content-grid">
         {/* Journey Section */}
         <div className="about-card journey-card">
-          <div className="card-icon"><MdSchool /></div>
-          <h3>Academic Record</h3>
+
+          <h3><div className="card-icon"><MdSchool /></div>Academics</h3>
           <div className="academic-grid">
             <div className="academic-item">
               <span className="degree">B.E. in Information Technology</span>

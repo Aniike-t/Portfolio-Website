@@ -74,15 +74,41 @@ a {
   align-items: center;
   scroll-snap-align: start;
   position: relative;
-  padding: 40px 5vw;
+  padding: 80px 40px;
 }
+
+
+@media (max-width: 768px) {
+  .section {
+    min-height: 100vh;
+    padding: 105px 10px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+}
+
+
 
 .content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 40px;
   z-index: 10;
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0;
+  }
+}
+
+
+
+
 
 /* Home Section */
 .home {
@@ -111,6 +137,7 @@ a {
   display: block;
   text-align: center;
 }
+
 
 .gradient-text {
   background: linear-gradient(135deg, var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green));
@@ -178,9 +205,26 @@ a {
 .home .footer-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.5rem;
   margin-top: 4rem;
   justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .home .footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .footer-btn {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+
 }
 
 .footer-btn {
@@ -237,15 +281,20 @@ a {
 }
 
 @media (max-width: 768px) {
-  .Profession-name {
-    font-size: 4rem;
+  .header-aniket {
+    font-size: 1.4rem;
   }
 
-  .footer-info {
-    flex-direction: column;
-    align-items: center;
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .google-dots-hero {
+    margin-top: 2rem;
   }
 }
+
 
 /* Hero Star Animation */
 .io-star-container {

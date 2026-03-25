@@ -1,10 +1,11 @@
 .experience-io-container {
-    padding: 120px 20px;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
+
+
 
 .exp-bg-glow {
     position: absolute;
@@ -117,6 +118,8 @@
     letter-spacing: -0.02em;
 }
 
+
+
 .company-name {
     font-size: 1rem;
     color: var(--text-secondary);
@@ -151,22 +154,23 @@
 
 /* Card Body */
 .card-body {
-    padding-left: 88px;
+    padding-left: 0px;
 }
 
 .description-list {
     list-style: none;
-    margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .description-list li {
-    font-size: 1.15rem;
+    font-size: var(--fs-base);
     line-height: 1.7;
     color: var(--text-secondary);
     margin-bottom: 1.2rem;
     position: relative;
     padding-left: 20px;
 }
+
 
 .description-list li::before {
     content: "";
@@ -211,10 +215,12 @@
         flex-direction: column;
         gap: 24px;
     }
+
     .date-location {
         align-items: flex-start;
         text-align: left;
     }
+
     .card-body {
         padding-left: 0;
     }
@@ -224,12 +230,69 @@
     .experience-header-io {
         flex-direction: column;
         align-items: flex-start;
-        gap: 40px;
+        gap: 20px;
+        margin-bottom: 32px;
     }
+
+    .experience-io-container {
+        padding: 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem !important;
+    }
+
+    .company-info {
+        gap: 12px;
+    }
+
+    .company-logo {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
     .company-info h3 {
-        font-size: 1.5rem;
+        font-size: 1.15rem;
+        margin-bottom: 0px;
     }
+
+    .company-name {
+        font-size: 0.85rem;
+    }
+
     .experience-card {
-        padding: 30px;
+        padding: 20px 16px;
+        border-radius: 20px;
+    }
+
+    .card-header {
+        margin-bottom: 20px;
+        gap: 12px;
+    }
+
+    .exp-date {
+        font-size: 0.85rem;
+    }
+
+    .description-list {
+        margin-bottom: 24px;
+    }
+
+    .description-list li {
+        font-size: 0.85rem;
+        padding-left: 14px;
+        margin-bottom: 0.8rem;
+    }
+
+    .tech-pill {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    .resume-btn-io {
+        padding: 10px 20px;
+        font-size: 0.8rem;
     }
 }

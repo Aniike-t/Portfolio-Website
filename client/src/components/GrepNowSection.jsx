@@ -7,22 +7,23 @@ const GrepNowSection = () => {
         <section id="grepnow" className="section grepnow-featured">
             <div className="grep-business-section">
                 <div className="grep-bg-layer"></div>
-
-                <div className="section-header-io fade-in" style={{ maxWidth: '1400px', margin: '0 auto 60px', padding: '0 40px' }}>
-                    <span className="section-subtitle">FEATURED VENTURE</span>
-                    <h2 className="section-title">Case Study: <span className="gradient-text">gREP</span></h2>
+                {/* 
+                <div className="section-header-io fade-in grep-featured-header">
+                    <span className="section-subtitle">FEATURED LIVE APP</span>
+                    <h2 className="section-title"> gREP</h2>
                     <div className="section-line"></div>
-                </div>
+                </div> */}
+
 
                 <div className="grep-content-wrapper">
                     <div className="grep-info-side">
-                        <div className="grep-badge">FEATURED VENTURE</div>
+                        <div className="grep-badge">FEATURED APP</div>
                         <h2 className="grep-brand-title">gREP</h2>
-                        <p className="grep-tagline">Vocabulary Mastered. Eloquence Demystified.</p>
+                        <p className="grep-tagline">Vocabulary Demystified.</p>
 
                         <div className="grep-main-description">
                             gREP is a full-scale educational ecosystem engineered to fix the fragmented nature of language learning.
-                            By combining a proprietary **Spaced Repetition Algorithm** with a minimalist, gesture-driven
+                            By combining a proprietary <b>Spaced Repetition Algorithm</b> with a minimalist, gesture-driven
                             Android interface, I've created a platform that treats vocabulary as a scientific pursuit.
                         </div>
 
@@ -48,20 +49,20 @@ const GrepNowSection = () => {
                             <a href="https://grepnow.in/" target="_blank" rel="noopener noreferrer" className="grep-btn-primary">
                                 VISIT GREPNOW.IN
                             </a>
-                            <a href="https://github.com/aniike-t/grep-vocabulary" target="_blank" rel="noopener noreferrer" className="grep-btn-secondary">
+                            {/* <a href="https://github.com/aniike-t/grep-vocabulary" target="_blank" rel="noopener noreferrer" className="grep-btn-secondary">
                                 VIEW ARCHITECTURE
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 
-                    <div className="grep-visual-side">
-                        <div className="phone-mockup-v2">
+                    {/* <div className="grep-visual-side"> */}
+                    {/* <div className="phone-mockup-v2">
                             <div className="screen-inner">
                                 <img src="https://www.grepnow.in/og-image.png" alt="gREP Application UI" />
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="feature-floating-cards">
+                    {/* <div className="feature-floating-cards">
                             <div className="f-card f1">
                                 <FaBrain />
                                 <span>Neural Spaced Repetition</span>
@@ -70,17 +71,17 @@ const GrepNowSection = () => {
                                 <FaLayerGroup />
                                 <span>Custom Mastery Decks</span>
                             </div>
-                        </div>
-                    </div>
+                        </div> */}
                 </div>
+            </div>
 
-                <div className="grep-tech-strip">
+            {/* <div className="grep-tech-strip">
                     <div className="tech-marquee">
                         <span>REACT NATIVE</span> • <span>ANDROID ARCHITECTURE</span> • <span>DYNAMODB</span> •
                         <span>PIXEL-PERFECT UI</span> • <span>SPACED REPETITION</span> • <span>OFFLINE SYNC</span>
                     </div>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </section>
     );
 };

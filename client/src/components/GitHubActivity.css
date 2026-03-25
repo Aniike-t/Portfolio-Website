@@ -1,0 +1,168 @@
+.github-heatmap-container {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 40px;
+    padding: 60px;
+    margin-top: 120px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+
+.gh-heatmap-header {
+    margin-bottom: 48px;
+}
+
+.gh-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.gh-count {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.04em;
+}
+
+.gh-user-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+}
+
+.gh-live-status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #4ade80;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.gh-pulse {
+    width: 8px;
+    height: 8px;
+    background: #4ade80;
+    border-radius: 50%;
+    animation: gh-pulse 2s infinite linear;
+}
+
+@keyframes gh-pulse {
+    0% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+    }
+
+    100% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+    }
+}
+
+.heatmap-scroll-area {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 24px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.heatmap-wrapper {
+    display: flex;
+    gap: 4px;
+    width: max-content;
+}
+
+.heatmap-week {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.heatmap-day {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background-color: var(--day-color, #161b22);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.heatmap-day:hover {
+    transform: scale(1.6);
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.heatmap-day[data-count="0"] {
+    background-color: #161b22;
+}
+
+.heatmap-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+}
+
+.gh-legend-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.gh-legend {
+    display: flex;
+    gap: 4px;
+}
+
+.legend-day {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .github-heatmap-container {
+        padding: 32px 20px;
+        border-radius: 24px;
+        margin-top: 60px;
+    }
+
+    .gh-count {
+        font-size: 1.6rem;
+    }
+
+    .gh-user-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .heatmap-day {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.error-state {
+    text-align: center;
+    padding: 60px;
+    color: var(--google-red);
+}
+
+.gh-heatmap-sync {
+    padding: 60px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+}

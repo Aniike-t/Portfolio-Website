@@ -1,14 +1,16 @@
 .about-container-v2 {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 160px 24px;
+    width: 100%;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
 
+
+
+
 .about-header-section {
     max-width: 900px;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 
 .io-subtitle {
@@ -29,6 +31,8 @@
     color: white;
 }
 
+
+
 .io-description {
     font-size: 1.6rem;
     color: var(--text-secondary);
@@ -36,6 +40,8 @@
     font-weight: 300;
     max-width: 800px;
 }
+
+
 
 .about-content-grid {
     display: grid;
@@ -55,18 +61,6 @@
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.about-card:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(66, 133, 244, 0.3);
-    transform: translateY(-10px);
-}
-
-.card-icon {
-    font-size: 2.2rem;
-    color: var(--google-blue);
-    margin-bottom: 2.5rem;
-}
-
 .about-card h3 {
     font-size: 2.2rem;
     font-weight: 500;
@@ -79,6 +73,8 @@
     color: var(--text-secondary);
     line-height: 1.7;
 }
+
+
 
 /* Academic Section */
 .academic-grid {
@@ -120,16 +116,38 @@
 
 /* Skills Bento */
 .skills-bento {
-    grid-column: span 2;
     background: rgba(255, 255, 255, 0.02);
-    border-radius: 44px;
-    padding: 70px;
+    border-radius: 40px;
+    padding: 60px;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
 }
+
+@media (max-width: 1024px) {
+    .skills-bento {
+        padding: 40px;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-bento {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-column: span 1;
+        padding: 16px !important;
+        gap: 16px !important;
+        border-radius: 20px;
+    }
+
+    .skill-group h4 {
+        font-size: 0.7rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+
 
 .skill-group {
     flex: 1;
@@ -137,29 +155,29 @@
 }
 
 .skill-group h4 {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 700;
     color: var(--text-secondary);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .skill-icons-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 8px;
 }
 
 .skill-item-io {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 12px 24px;
+    padding: 6px 14px;
     border-radius: 100px;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-secondary);
     transition: all 0.3s ease;
@@ -171,22 +189,42 @@
     transform: scale(1.05);
 }
 
+
 .s-icon {
-    font-size: 1.3rem;
-    color: var(--google-blue);
+    font-size: 1.2rem;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .skill-item-io {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+        gap: 6px;
+    }
+
+    .s-icon {
+        font-size: 1rem;
+    }
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 1100px) {
     .io-title {
         font-size: 4rem;
     }
+
     .io-description {
         font-size: 1.4rem;
     }
+
     .about-content-grid {
         grid-template-columns: 1fr;
     }
+
     .skills-bento {
         grid-column: span 1;
         flex-direction: column;
@@ -196,34 +234,54 @@
 }
 
 @media (max-width: 768px) {
+    .about-header-section {
+        margin-bottom: 24px;
+    }
+
+    .io-subtitle {
+        margin-bottom: 0.5rem;
+    }
+
     .io-title {
-        font-size: 2.8rem;
-        line-height: 1.1;
-    }
-    .io-description {
-        font-size: 1.2rem;
-    }
-    .about-card {
-        padding: 40px 24px;
-    }
-    .skills-bento {
-        padding: 40px 24px;
-    }
-    .about-card h3 {
         font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
+
+    .io-description {
+        font-size: 1rem;
+    }
+
+    .about-card {
+        padding: 16px 14px;
+        border-radius: 20px;
+    }
+
+    .about-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
     .degree {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
+    }
+
+    .academic-grid {
+        gap: 16px;
     }
 }
 
+
+
 @media (max-width: 480px) {
     .about-container-v2 {
-        padding: 100px 16px;
+        padding: 0 16px 20px;
+        /* Top padding is handled by the parent section now */
     }
+
     .io-title {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
+
     .skill-group {
         min-width: 100%;
     }

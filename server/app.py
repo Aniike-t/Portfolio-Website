@@ -8,6 +8,8 @@ from blueprints.admin import admin_bp
 from blueprints.contact import contact_bp
 from blueprints.projects import projects_bp
 from blueprints.games import games_bp
+from blueprints.github import github_bp
+
 
 app = Flask(__name__)
 cache.init_app(app)
@@ -21,6 +23,8 @@ app.register_blueprint(admin_bp)
 app.register_blueprint(contact_bp)
 app.register_blueprint(projects_bp)
 app.register_blueprint(games_bp)
+app.register_blueprint(github_bp)
+
 
 # teardown application context for database closing
 app.teardown_appcontext(close_db)

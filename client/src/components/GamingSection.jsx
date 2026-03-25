@@ -16,10 +16,10 @@ const GamingSection = () => {
     });
 
     return (
-        <section id="hobbies" className="gaming-section">
+        <div id="hobbies" className="gaming-section">
             <div className="section-header-io fade-in">
                 <span className="section-subtitle">GAMESSS...</span>
-                <h2 className="section-title">Play & Create</h2>
+                <h2 className="section-title">Play</h2>
                 <div className="section-line"></div>
             </div>
 
@@ -60,7 +60,8 @@ const GamingSection = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
     );
 };
 
