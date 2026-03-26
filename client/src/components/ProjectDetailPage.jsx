@@ -63,7 +63,18 @@ function ProjectDetailPage() {
       <main className="detail-grid">
         {/* HERO SECTION */}
         <section className="detail-hero-section">
-          <h1 className="detail-title">{project.name}</h1>
+          <div className="detail-title-wrapper">
+            {project.media && project.media.length > 0 && (
+               <div className="project-logo-container">
+                 <img 
+                   src={project.media[0].url} 
+                   alt={`${project.name} Logo`} 
+                   className="project-logo-detail"
+                 />
+               </div>
+            )}
+            <h1 className="detail-title">{project.name}</h1>
+          </div>
           <div className="detail-title-line"></div>
           <p className="detail-summary">{project.summary}</p>
 
@@ -75,13 +86,13 @@ function ProjectDetailPage() {
         </section>
 
         {/* MEDIA SECTION */}
-        {Array.isArray(project.media) && project.media.length > 0 && (
+        {Array.isArray(project.media) && project.media.length > 1 && (
           <section className="detail-gallery-section">
             <div className="gallery-main">
-              {project.media.map((item, index) => (
+              {project.media.slice(1).map((item, index) => (
                 <div key={index} className={`gallery-item ${item.type === 'video/mp4' ? 'video' : 'image'}`}>
                   {item.type === 'image' ? (
-                    <img src={item.url} alt={`${project.name} display`} />
+                    <img src={item.url} alt={`${project.name} screenshot`} />
                   ) : (
                     <video autoPlay muted loop playsInline>
                       <source src={item.url} type="video/mp4" />
