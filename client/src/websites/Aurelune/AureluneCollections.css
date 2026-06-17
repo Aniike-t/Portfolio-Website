@@ -1,0 +1,163 @@
+.aurelune-collections-page {
+  padding: 4rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.collections-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.collections-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 300;
+  color: var(--cream-light);
+  margin-bottom: 1.5rem;
+}
+
+.collections-subtitle {
+  font-size: 1.1rem;
+  color: var(--cream-dark);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.collections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  margin-bottom: 4rem;
+}
+
+.collection-block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Alternate row layouts */
+.collection-block:nth-child(even) {
+  grid-template-columns: 2fr 1fr;
+}
+
+.collection-block:nth-child(even) .collection-meta {
+  order: 2;
+}
+
+.collection-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.collection-season {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--gold-accent);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.collection-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--cream-light);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.collection-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(232, 220, 207, 0.8);
+  margin-bottom: 2rem;
+}
+
+.view-collection-btn {
+  background: transparent;
+  border: 1px solid var(--cream-light);
+  color: var(--cream-light);
+  padding: 12px 24px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-collection-btn:hover {
+  background: var(--cream-light);
+  color: var(--text-dark);
+}
+
+.collection-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  height: 600px;
+}
+
+.gallery-img-wrap {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.gallery-img-wrap:hover img {
+  transform: scale(1.05);
+}
+
+/* Create a staggered masonry effect within the grid */
+.img-0 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  height: 100%;
+}
+
+.img-1 {
+  grid-column: 2;
+  height: 290px;
+}
+
+.img-2 {
+  grid-column: 2;
+  height: 290px;
+  align-self: end;
+}
+
+@media (max-width: 900px) {
+  .collection-block,
+  .collection-block:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .collection-block:nth-child(even) .collection-meta {
+    order: -1;
+  }
+  
+  .collection-gallery {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  
+  .img-0, .img-1, .img-2 {
+    grid-column: 1;
+    grid-row: auto;
+    height: 400px;
+  }
+}

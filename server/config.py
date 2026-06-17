@@ -3,7 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_URL = os.getenv("NEON_DB_URL")
+# Support both the older NEON_DB_URL env and the common DATABASE_URL fallback.
+DB_URL = os.getenv("NEON_DB_URL") or os.getenv("DATABASE_URL")
 ADMIN_USER = os.getenv("ADMIN_USER")
 ADMIN_PASS = os.getenv("ADMIN_PASS")
 

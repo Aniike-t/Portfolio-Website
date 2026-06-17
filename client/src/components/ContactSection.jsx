@@ -84,6 +84,12 @@ const ContactSection = () => {
                 </div>
 
                 <div className="contact-form-glass">
+                    {isSubmitting && (
+                        <div className="contact-loading-overlay">
+                            <div className="contact-loader" aria-label="Sending your message"></div>
+                            <p className="contact-loading-text">Sending your message…</p>
+                        </div>
+                    )}
                     <form className="contact-v2-form" onSubmit={handleSubmit}>
                         <div className="form-row">
                             <div className="input-group">

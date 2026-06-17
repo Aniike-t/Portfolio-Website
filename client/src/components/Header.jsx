@@ -22,6 +22,7 @@ function Header() {
         <a href="#about" onClick={closeMenu}>About</a>
         {/* <a href="#grepnow" onClick={closeMenu}>gREP</a> */}
         <a href="#projects" onClick={closeMenu}>Projects</a>
+        <a href="#websites" onClick={closeMenu}>Websites</a>
         <a href="#experience" onClick={closeMenu}>Experience</a>
         <a href="#hobbies" onClick={closeMenu}>Hobbies</a>
       </nav>

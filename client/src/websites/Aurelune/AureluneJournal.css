@@ -1,0 +1,142 @@
+.aurelune-journal-page {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.journal-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.journal-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 300;
+  color: var(--cream-light);
+  margin-bottom: 1.5rem;
+}
+
+.journal-subtitle {
+  font-size: 1.1rem;
+  color: var(--cream-dark);
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.journal-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-card.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  border-bottom: 1px solid rgba(232, 220, 207, 0.1);
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.journal-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.journal-card.featured .journal-img-wrap {
+  aspect-ratio: 16/9;
+}
+
+.journal-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.journal-card:hover .journal-img-wrap img {
+  transform: scale(1.05);
+}
+
+.journal-meta {
+  padding-top: 1.5rem;
+}
+
+.journal-meta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.journal-category {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--gold-accent);
+  text-transform: uppercase;
+}
+
+.journal-date {
+  font-size: 0.8rem;
+  color: var(--cream-dark);
+}
+
+.journal-card-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--cream-light);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.journal-card.featured .journal-card-title {
+  font-size: 3rem;
+}
+
+.journal-excerpt {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(232, 220, 207, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.read-more-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--gold-accent);
+  color: var(--gold-accent);
+  padding-bottom: 4px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.read-more-btn:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .journal-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .journal-card.featured {
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+  }
+}

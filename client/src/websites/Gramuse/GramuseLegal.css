@@ -1,0 +1,51 @@
+.gramuse-legal-page {
+  padding: 8rem 5% 4rem;
+  background-color: var(--bg-grocery);
+  min-height: 80vh;
+}
+
+.legal-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 24px;
+  padding: 4rem;
+  box-shadow: 0 10px 30px rgba(27, 77, 62, 0.05);
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid var(--green-light);
+  padding-bottom: 2rem;
+}
+
+.legal-header h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--green-primary);
+}
+
+.legal-content {
+  color: var(--text-grocery-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.legal-content p {
+  margin-bottom: 2rem;
+}
+
+.legal-content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--green-primary);
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .legal-container {
+    padding: 2rem;
+  }
+}
