@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header.jsx';
 import { MdLocationOn, MdEmail } from 'react-icons/md';
@@ -16,6 +16,9 @@ import GrepNowSection from './components/GrepNowSection.jsx';
 import GitHubActivity from './components/GitHubActivity';
 import ContactSection from './components/ContactSection';
 import ScrollIndicator from './components/ScrollIndicator';
+import WebsitesSection from './components/WebsitesSection.jsx';
+import GramuseApp from './websites/Gramuse/GramuseApp.jsx';
+import AureluneApp from './websites/Aurelune/AureluneApp.jsx';
 
 
 const PortfolioLayout = () => {
@@ -100,6 +103,13 @@ const PortfolioLayout = () => {
           </div>
         </section>
 
+        {/* WEBSITES SHOWCASE SECTION */}
+        <section id="websites" className="section bg-secondary">
+          <div className="content">
+            <WebsitesSection />
+          </div>
+        </section>
+
         {/* EXPERIENCE SECTION */}
         <section id="experience" className="section contactsection">
           <div className="content" id="experience-section">
@@ -135,6 +145,8 @@ const PortfolioLayout = () => {
 
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     // Only run cursor logic on desktop
     if (window.innerWidth <= 768) return;
@@ -142,6 +154,15 @@ function App() {
     const cursor = document.getElementById('cursor');
     if (!cursor) return;
 
+    // Hide custom cursor on website subpages
+    if (location.pathname.startsWith('/websites/')) {
+      cursor.style.display = 'none';
+      document.body.style.cursor = 'auto';
+      return;
+    } else {
+      cursor.style.display = 'block';
+      document.body.style.cursor = 'none';
+    }
 
     let mouseX = 0, mouseY = 0, currX = 0, currY = 0;
 
@@ -191,7 +212,7 @@ function App() {
       });
       if (cursor.timeout) clearTimeout(cursor.timeout);
     };
-  }, []);
+  }, [location.pathname]);
 
   return (
     <>
@@ -199,6 +220,8 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/project/:projectId" element={<ProjectDetailPage />} />
+        <Route path="/websites/gramuse" element={<GramuseApp />} />
+        <Route path="/websites/aurelune" element={<AureluneApp />} />
         <Route path="/" element={<PortfolioLayout />} />
         <Route path="/*" element={<PortfolioLayout />} />
       </Routes>

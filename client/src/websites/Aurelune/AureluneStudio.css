@@ -1,0 +1,141 @@
+.aurelune-studio-page {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.studio-hero {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.studio-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 300;
+  color: var(--cream-light);
+  margin-bottom: 1.5rem;
+}
+
+.studio-subtitle {
+  font-size: 1.1rem;
+  color: var(--cream-dark);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.studio-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.studio-text-block {
+  padding: 2rem;
+}
+
+.studio-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--gold-accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.studio-text-block h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--cream-light);
+  margin-bottom: 1.5rem;
+}
+
+.studio-text-block p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(232, 220, 207, 0.85);
+}
+
+.studio-image-block {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.studio-image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.studio-image-block:hover img {
+  transform: scale(1.05);
+}
+
+.studio-materials-section {
+  border-top: 1px solid rgba(232, 220, 207, 0.1);
+  padding-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.materials-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--cream-light);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.material-card {
+  text-align: left;
+  border-left: 1px solid rgba(232, 220, 207, 0.2);
+  padding-left: 1.5rem;
+}
+
+.material-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--gold-accent);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.material-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(232, 220, 207, 0.7);
+}
+
+@media (max-width: 900px) {
+  .studio-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .studio-image-block {
+    height: 400px;
+    order: -1;
+  }
+  
+  .materials-grid {
+    grid-template-columns: 1fr;
+  }
+}
