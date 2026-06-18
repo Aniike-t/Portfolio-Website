@@ -1,0 +1,60 @@
+{
+  "locations": [
+    "The Daily Grind, NY",
+    "The Daily Grind, Astoria",
+    "The Daily Grind, Long Island City",
+    "The Daily Grind, Rego Park"
+  ],
+  "stats": {
+    "The Daily Grind, NY": {
+      "grossRevenue": 156900.67,
+      "avgOrderValue": 18.50,
+      "revenueData": [18200, 21150, 19400, 21150.88, 23000, 18500, 20400],
+      "laborCostPercent": 28,
+      "capacity": { "Astoria": 91, "Long Island City": 88, "Rego Park": 70 }
+    },
+    "The Daily Grind, Astoria": {
+      "grossRevenue": 64800.20,
+      "avgOrderValue": 16.20,
+      "revenueData": [8200, 9150, 8400, 9800.50, 11000, 7800, 9400],
+      "laborCostPercent": 24,
+      "capacity": { "Astoria": 95, "Long Island City": 60, "Rego Park": 50 }
+    },
+    "The Daily Grind, Long Island City": {
+      "grossRevenue": 52100.40,
+      "avgOrderValue": 19.80,
+      "revenueData": [6200, 7800, 7100, 8100.20, 8900, 6900, 7100],
+      "laborCostPercent": 31,
+      "capacity": { "Astoria": 70, "Long Island City": 92, "Rego Park": 65 }
+    },
+    "The Daily Grind, Rego Park": {
+      "grossRevenue": 40000.07,
+      "avgOrderValue": 15.50,
+      "revenueData": [3800, 4200, 3900, 3250.18, 3100, 3800, 3900],
+      "laborCostPercent": 29,
+      "capacity": { "Astoria": 60, "Long Island City": 70, "Rego Park": 85 }
+    }
+  },
+  "integrations": [
+    { "id": "int1", "name": "QuickBooks", "status": "Connected" },
+    { "id": "int2", "name": "Xero", "status": "Connected" },
+    { "id": "int3", "name": "Homebase", "status": "Connected" },
+    { "id": "int4", "name": "Square", "status": "Connected" },
+    { "id": "int5", "name": "Toast", "status": "Disconnected" }
+  ],
+  "reports": [
+    { "id": "rep1", "name": "PRIME COST REPORT", "desc": "The Cost of Goods Sold (Food & Beverage Cost) and Labor Cost, representing the primary expense categories." },
+    { "id": "rep2", "name": "LABOR SUMMARY REPORT", "desc": "Total labor cost distribution, overtime analyses, and employee scheduling variances." },
+    { "id": "rep3", "name": "INVENTORY VALUE INDEX", "desc": "Beginning inventory, purchases, endings, and calculated cost of goods sold ratios." },
+    { "id": "rep4", "name": "MENU ENGINEERING LOG", "desc": "Menu item popularity index, contribution margins, and price optimization vectors." }
+  ],
+  "categories": [
+    { "name": "HIGH-VOLUME", "desc": "Busiest hours with > 120 ticket counts", "color": "#f2644c" },
+    { "name": "LOCAL SPOT", "desc": "Moderate community traffic", "color": "#6f5ef5" },
+    { "name": "SMALL EATERY", "desc": "< 20 seats and < 5 workers", "color": "#beff53" }
+  ],
+  "aiDefaultSuggestions": [
+    { "text": "Show labor cost", "reply": "Labor cost is currently high at 28% for NY. Key factors: Astoria experienced a 15% drop in transaction volume between 2 PM and 4 PM today, while staffing levels remained at peak capacity. I recommend implementing a flexible scheduling algorithm and cross-training baristas to optimize floor deployment." },
+    { "text": "Initiate strategy planning", "reply": "Strategy planning initiated for The Daily Grind. Priority goals: 1) Reduce base labor cost percentage to 24%, 2) Bump Average Order Value (AOV) by 12% via intelligent cross-selling prompts, 3) Standardize integration sync times for QuickBooks and Xero. Detailed steps have been populated in your Weekly Reports panel." }
+  ]
+}

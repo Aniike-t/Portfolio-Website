@@ -42,7 +42,7 @@ function GramuseProfile() {
               </div>
               <div className="input-group">
                 <label>Phone Number</label>
-                <input type="tel" defaultValue="+1 (555) 000-0000" />
+                <input type="tel" defaultValue="+91 XXXXX XXXXX" />
               </div>
               <button type="submit" className="gramuse-btn update-btn">Update Information</button>
             </form>
@@ -55,7 +55,7 @@ function GramuseProfile() {
                 <h4>Weekly Harvest Box</h4>
                 <p>Delivered every Sunday morning.</p>
               </div>
-              <span className="sub-price">$35.00 / wk</span>
+              <span className="sub-price">₹1,750 / wk</span>
               <button className="manage-sub-btn">Manage</button>
             </div>
           </div>

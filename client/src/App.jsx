@@ -19,6 +19,9 @@ import ScrollIndicator from './components/ScrollIndicator';
 import WebsitesSection from './components/WebsitesSection.jsx';
 import GramuseApp from './websites/Gramuse/GramuseApp.jsx';
 import AureluneApp from './websites/Aurelune/AureluneApp.jsx';
+import NiramayaApp from './websites/Niramaya/NiramayaApp.jsx';
+import SolaraApp from './websites/Solara/SolaraApp.jsx';
+import DailyGrindApp from './websites/DailyGrind/DailyGrindApp.jsx';
 
 
 const PortfolioLayout = () => {
@@ -222,6 +225,9 @@ function App() {
         <Route path="/project/:projectId" element={<ProjectDetailPage />} />
         <Route path="/websites/gramuse" element={<GramuseApp />} />
         <Route path="/websites/aurelune" element={<AureluneApp />} />
+        <Route path="/websites/niramaya" element={<NiramayaApp />} />
+        <Route path="/websites/solara" element={<SolaraApp />} />
+        <Route path="/websites/dailygrind" element={<DailyGrindApp />} />
         <Route path="/" element={<PortfolioLayout />} />
         <Route path="/*" element={<PortfolioLayout />} />
       </Routes>

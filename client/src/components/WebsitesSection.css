@@ -37,7 +37,7 @@
   }
 }
 
-.website-card {
+.showcase-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
@@ -50,7 +50,7 @@
   overflow: hidden;
 }
 
-.website-card::before {
+.showcase-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -62,7 +62,7 @@
   transition: opacity 0.4s ease;
 }
 
-.website-card:hover {
+.showcase-card:hover {
   transform: translateY(-8px);
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.2);
@@ -70,18 +70,19 @@
               0 0 30px rgba(var(--card-accent), 0.05);
 }
 
-.website-card:hover::before {
+.showcase-card:hover::before {
   opacity: 1;
 }
 
-.card-top {
+.showcase-card-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
-.card-icon-wrapper {
+.showcase-card-icon-wrapper {
   background: rgba(255, 255, 255, 0.04);
   padding: 10px;
   border-radius: 12px;
@@ -91,11 +92,11 @@
   transition: transform 0.4s ease;
 }
 
-.website-card:hover .card-icon-wrapper {
+.showcase-card:hover .showcase-card-icon-wrapper {
   transform: scale(1.1) rotate(5deg);
 }
 
-.card-badge {
+.showcase-card-badge {
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -106,7 +107,7 @@
   border-radius: 100px;
 }
 
-.card-title {
+.showcase-card-title {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
@@ -114,7 +115,7 @@
   letter-spacing: -0.01em;
 }
 
-.card-desc {
+.showcase-card-desc {
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.6;
@@ -122,14 +123,14 @@
   flex-grow: 1;
 }
 
-.card-tags {
+.showcase-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
 }
 
-.card-tag {
+.showcase-card-tag {
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-secondary);
@@ -139,11 +140,11 @@
   border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
-.website-card:hover .card-tag {
+.showcase-card:hover .showcase-card-tag {
   border-color: rgba(255, 255, 255, 0.05);
 }
 
-.card-footer {
+.showcase-card-footer {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -157,6 +158,6 @@
   transition: transform 0.3s ease;
 }
 
-.website-card:hover .launch-arrow {
+.showcase-card:hover .launch-arrow {
   transform: translateX(6px);
 }

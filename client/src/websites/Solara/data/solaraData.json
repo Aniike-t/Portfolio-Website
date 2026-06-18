@@ -1,0 +1,69 @@
+{
+  "services": [
+    {
+      "id": "s1",
+      "title": "Solar Panel Installation",
+      "description": "High-performance and long-lasting solar panel installation for residential rooftops and industrial setups.",
+      "icon": "panel"
+    },
+    {
+      "id": "s2",
+      "title": "Solar Inverter Solutions",
+      "description": "Advanced inverter and lithium battery storage systems to guarantee reliable power reserves 24/7.",
+      "icon": "inverter"
+    },
+    {
+      "id": "s3",
+      "title": "Residential & Commercial",
+      "description": "Customized solar blueprints scaled perfectly for private homes, office parks, and factories.",
+      "icon": "building"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "John Lewis",
+      "rating": 5,
+      "review": "Since installing the solar system, my electricity bills have dropped significantly. Their engineering team was extremely professional and quick."
+    },
+    {
+      "id": "t2",
+      "name": "Emily Gomez",
+      "rating": 5,
+      "review": "The entire process was smooth and hassle-free. They guided me through government subsidies and still offer fantastic after-sales support."
+    },
+    {
+      "id": "t3",
+      "name": "Kevin Huang",
+      "rating": 5,
+      "review": "The commercial solar system has been a great investment for our plant. Operating costs are down 40% and we no longer worry about local blackouts."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "f1",
+      "question": "How long do solar panels last?",
+      "answer": "Most modern solar panels are built to last between 25 and 30 years. During this period, they maintain high efficiency levels, typically retaining over 85% of their original output power."
+    },
+    {
+      "id": "f2",
+      "question": "How long does solar installation take?",
+      "answer": "For typical residential rooftops, the physical installation of panels and wiring takes only 1 to 2 days. The engineering design, inspection permits, and net metering setup can take another 2 to 3 weeks."
+    },
+    {
+      "id": "f3",
+      "question": "Does solar energy reduce electricity bills?",
+      "answer": "Yes! By generating your own clean power during the day, you reduce the amount of electricity you buy from the grid. Any surplus power you generate can be fed back into the grid for billing credits."
+    },
+    {
+      "id": "f4",
+      "question": "Will solar work during a power outage?",
+      "answer": "Standard grid-tied solar systems automatically shut off during grid failures for technician safety. However, if your setup includes a hybrid inverter and battery storage unit, it will provide backup power instantly."
+    },
+    {
+      "id": "f5",
+      "question": "Do solar panels require maintenance?",
+      "answer": "Solar panels require very little maintenance since they have no moving parts. Cleaning them with water 2 or 3 times a year to remove dust, leaves, or bird droppings is usually sufficient to maintain max efficiency."
+    }
+  ]
+}

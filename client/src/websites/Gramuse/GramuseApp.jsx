@@ -235,7 +235,7 @@ function GramuseApp() {
                     <span className="product-unit">Price per {product.unit}</span>
 
                     <div className="product-card-footer">
-                      <span className="product-price">${product.price.toFixed(2)}</span>
+                      <span className="product-price">₹{product.price.toLocaleString('en-IN')}</span>
                       
                       {cartItem ? (
                         <div className="qty-selector">
@@ -305,7 +305,7 @@ function GramuseApp() {
                     <img src={item.product.image} alt={item.product.name} />
                     <div className="cart-item-details">
                       <h4>{item.product.name}</h4>
-                      <p>${item.product.price.toFixed(2)} / {item.product.unit}</p>
+                      <p>₹{item.product.price.toLocaleString('en-IN')} / {item.product.unit}</p>
                       
                       <div className="cart-item-actions">
                         <div className="qty-selector small">
@@ -324,7 +324,7 @@ function GramuseApp() {
                       </div>
                     </div>
                     <div className="cart-item-subtotal">
-                      ${(item.product.price * item.quantity).toFixed(2)}
+                      ₹{(item.product.price * item.quantity).toLocaleString('en-IN')}
                     </div>
                   </div>
                 ))}
@@ -336,15 +336,15 @@ function GramuseApp() {
             <div className="cart-drawer-footer">
               <div className="cart-summary-line">
                 <span>Subtotal</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>₹{cartTotal.toLocaleString('en-IN')}</span>
               </div>
               <div className="cart-summary-line">
                 <span>Eco Shipping</span>
-                <span>{cartTotal > 35 ? 'FREE' : '$4.99'}</span>
+                <span>{cartTotal > 1000 ? 'FREE' : '₹150'}</span>
               </div>
               <div className="cart-summary-line total">
                 <span>Total</span>
-                <span>${(cartTotal + (cartTotal > 35 ? 0 : 4.99)).toFixed(2)}</span>
+                <span>₹{(cartTotal + (cartTotal > 1000 ? 0 : 150)).toLocaleString('en-IN')}</span>
               </div>
 
               <button 
@@ -402,7 +402,7 @@ function GramuseApp() {
                       required 
                       value={shippingInfo.phone} 
                       onChange={e => setShippingInfo(prev => ({ ...prev, phone: e.target.value }))}
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+91 98765 43210"
                     />
                   </div>
                   <button type="submit" className="confirm-payment-btn">

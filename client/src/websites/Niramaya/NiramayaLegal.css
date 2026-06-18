@@ -1,0 +1,56 @@
+.niramaya-legal-section {
+  padding: 120px 5% 80px;
+  background-color: #ffffff;
+  color: #363636;
+  min-height: 100vh;
+}
+
+.niramaya-legal-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #363636;
+}
+
+.legal-subtitle {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.legal-document-body {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.legal-paragraph-block {
+  margin-bottom: 35px;
+}
+
+.legal-paragraph-block h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #363636;
+  margin-bottom: 12px;
+}
+
+.legal-paragraph-block p {
+  color: #555;
+}
+
+.legal-footer-disclaimer {
+  background-color: #f9f4f7;
+  padding: 30px;
+  border-radius: 20px;
+  border-left: 4px solid #bbcffb;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  color: #666;
+}

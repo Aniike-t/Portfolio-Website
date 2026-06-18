@@ -1,0 +1,80 @@
+[
+  {
+    "id": "vit-d3",
+    "name": "Vegan Vitamin D3 + K2",
+    "category": "Vitamins",
+    "price": 899,
+    "rating": 4.8,
+    "unit": "60 Capsules",
+    "origin": "Himalayas, India",
+    "description": "Plant-based D3 combined with bioactive K2 in organic cold-pressed coconut MCT oil for superior absorption, supporting bone strength and immunity.",
+    "image": "/niramaya/vit-d3.jpg",
+    "indicators": ["Allergen-Free", "Non-GMO", "Premium Ingredients"],
+    "featured": true
+  },
+  {
+    "id": "ashwagandha",
+    "name": "Ashwagandha Gold (KSM-66)",
+    "category": "Dietary supplements",
+    "price": 699,
+    "rating": 4.9,
+    "unit": "60 Tablets",
+    "origin": "Rajasthan, India",
+    "description": "Full-spectrum root extract with gold-standard KSM-66 to lower stress, enhance cognitive focus, and boost natural energy levels.",
+    "image": "/niramaya/ashwagandha.jpg",
+    "indicators": ["100% Organic", "Anti-Stress", "Pure Root Extract"],
+    "featured": true
+  },
+  {
+    "id": "collagen",
+    "name": "Marine Collagen Peptides",
+    "category": "Dietary supplements",
+    "price": 1499,
+    "rating": 4.7,
+    "unit": "250g Powder",
+    "origin": "Coastal Kerala, India",
+    "description": "Hydrolyzed Type I & III marine collagen for healthy hair growth, glowing skin hydration, and flexible joint support.",
+    "image": "/niramaya/collagen.jpg",
+    "indicators": ["Type I & III", "Sustainably Sourced", "Hydrolyzed"],
+    "featured": true
+  },
+  {
+    "id": "omega3",
+    "name": "Premium Omega-3 Fish Oil",
+    "category": "Vitamins",
+    "price": 999,
+    "rating": 4.6,
+    "unit": "90 Softgels",
+    "origin": "Indian Ocean Sourced",
+    "description": "Ultra-pure molecularly distilled fish oil with 1000mg EPA & DHA per serving to promote heart health and brain function.",
+    "image": "/niramaya/omega3.jpg",
+    "indicators": ["Heavy-Metal Tested", "No Fishy Aftertaste", "Cardio Support"],
+    "featured": true
+  },
+  {
+    "id": "electrolyte",
+    "name": "Hydrate Electrolytes (Pomegranate)",
+    "category": "Vitamins",
+    "price": 499,
+    "rating": 4.8,
+    "unit": "30 Servings",
+    "origin": "Maharashtra, India",
+    "description": "Clean hydration mix with pink Himalayan salt, coconut water powder, and essential minerals to restore fluid balance instantly.",
+    "image": "/niramaya/electrolyte.jpg",
+    "indicators": ["Zero Sugar", "Keto Friendly", "Rapid Hydration"],
+    "featured": true
+  },
+  {
+    "id": "curcumin",
+    "name": "Organic Turmeric Curcumin",
+    "category": "Dietary supplements",
+    "price": 599,
+    "rating": 4.8,
+    "unit": "60 Capsules",
+    "origin": "Meghalaya, India",
+    "description": "High-potency Lakadong turmeric extract with 95% curcuminoids and black pepper extract (piperine) for enhanced bioavailability.",
+    "image": "/niramaya/curcumin.jpg",
+    "indicators": ["High Absorption", "Joint Relief", "Immunity Booster"],
+    "featured": true
+  }
+]

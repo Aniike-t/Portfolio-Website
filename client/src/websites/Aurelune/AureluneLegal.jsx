@@ -31,7 +31,7 @@ function AureluneLegal({ documentType }) {
           <p>All content on this site, including but not limited to text, graphics, logos, images, and software, is the property of Aurelune Paris and is protected by international copyright laws. Unauthorized reproduction is strictly prohibited.</p>
 
           <h3>3. Pricing and Availability</h3>
-          <p>All prices are listed in Euros (€) unless otherwise noted. We reserve the right to modify prices or discontinue items without notice. Given the limited nature of our collections, items may sell out quickly.</p>
+          <p>All prices are listed in Indian Rupees (₹) unless otherwise noted. We reserve the right to modify prices or discontinue items without notice. Given the limited nature of our collections, items may sell out quickly.</p>
         </>
       )
     }

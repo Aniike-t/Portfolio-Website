@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ShoppingCart, Shirt } from 'lucide-react';
+import { ShoppingCart, Shirt, Activity, Sun, Cpu } from 'lucide-react';
 import './WebsitesSection.css';
 
 const websitesList = [
@@ -23,6 +23,36 @@ const websitesList = [
     tags: ['Luxury Retail', 'Lookbook Slider', 'Size Selection', 'Minimalist Theme'],
     color: '#e8a598',
     link: '/websites/aurelune'
+  },
+  {
+    id: 'niramaya',
+    title: 'Niramaya',
+    subtitle: 'Premium Ayurvedic & Modern Wellness',
+    description: 'A luxury healthcare store with interactive product callouts, custom parallax scrolling, ingredient tags, a wellness blog, and full shopping functionality in INR.',
+    icon: <Activity size={24} />,
+    tags: ['Healthcare & Ayurveda', 'Parallax Scrolling', 'Interactive Tooltips', 'Wellness Dashboard', 'INR Localized'],
+    color: '#bbcffb',
+    link: '/websites/niramaya'
+  },
+  {
+    id: 'solara',
+    title: 'Solara',
+    subtitle: 'Modern Clean Energy Blueprints',
+    description: 'A professional clean energy solar portal featuring interactive savings calculators, layered 3D mouse parallax scenes, accordion FAQs, and animated vector assets.',
+    icon: <Sun size={24} />,
+    tags: ['Solar Energy', '3D Mouse Parallax', 'Savings Calculator', 'Accordion FAQs', 'Animated Vectors'],
+    color: '#beff53',
+    link: '/websites/solara'
+  },
+  {
+    id: 'dailygrind',
+    title: 'DailyGrind',
+    subtitle: 'AI Analytics & Operations Lead',
+    description: 'An interactive restaurant & cafe management dashboard featuring live data filtering, venue capacity gauges, animated clocks, and a fully functional AI operations agent chat tool with mobile layouts.',
+    icon: <Cpu size={24} />,
+    tags: ['AI Operations Lead', 'Live Data Filters', 'Clock Animations', 'Responsive Mobile Layout', 'Cafe Management'],
+    color: '#f2644c',
+    link: '/websites/dailygrind'
   }
 ];
 
@@ -42,27 +72,27 @@ function WebsitesSection() {
         {websitesList.map((web) => (
           <div 
             key={web.id} 
-            className="website-card"
+            className="showcase-card"
             style={{ '--card-accent': web.color }}
             onClick={() => navigate(web.link)}
           >
-            <div className="card-top">
-              <div className="card-icon-wrapper" style={{ color: web.color }}>
+            <div className="showcase-card-top">
+              <div className="showcase-card-icon-wrapper" style={{ color: web.color }}>
                 {web.icon}
               </div>
-              <span className="card-badge">{web.subtitle}</span>
+              <span className="showcase-card-badge">{web.subtitle}</span>
             </div>
             
-            <h3 className="card-title">{web.title}</h3>
-            <p className="card-desc">{web.description}</p>
+            <h3 className="showcase-card-title">{web.title}</h3>
+            <p className="showcase-card-desc">{web.description}</p>
             
-            <div className="card-tags">
+            <div className="showcase-card-tags">
               {web.tags.map((tag, i) => (
-                <span key={i} className="card-tag">{tag}</span>
+                <span key={i} className="showcase-card-tag">{tag}</span>
               ))}
             </div>
 
-            <div className="card-footer">
+            <div className="showcase-card-footer">
               <span className="launch-text">Launch Site</span>
               <span className="launch-arrow">→</span>
             </div>

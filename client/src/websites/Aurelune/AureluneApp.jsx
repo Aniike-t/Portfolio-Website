@@ -13,7 +13,7 @@ const HERO_SLIDES = [
   {
     id: 'slide1',
     title: 'BLAZER WITH BELT',
-    price: 420.00,
+    price: 42000.00,
     collection: 'SPRING-SUMMER 2026',
     desc: 'City Silhouettes is a study of proportion, texture, and movement. Inspired by contemporary architecture, this blazer explores soft structure and fluid tailoring.',
     image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700&auto=format&fit=crop&q=80',
@@ -22,7 +22,7 @@ const HERO_SLIDES = [
   {
     id: 'slide2',
     title: 'CASHMERE CARDIGAN',
-    price: 280.00,
+    price: 28000.00,
     collection: 'STUDIO ESSENTIALS',
     desc: 'Woven from raw Mongolian cashmere. Styled with micro-ribbed cuffs, drop shoulders, and organic horn buttons for effortless everyday layering.',
     image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=700&auto=format&fit=crop&q=80',
@@ -31,7 +31,7 @@ const HERO_SLIDES = [
   {
     id: 'slide3',
     title: 'SILK WRAP BLOUSE',
-    price: 195.00,
+    price: 19500.00,
     collection: 'THE CHIC SILHOUETTE',
     desc: 'A wrap blouse in sandwashed silk charmeuse. Features a low cowl draping and adjustable tie sash at the waist. Extremely soft drape and luxurious luster.',
     image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700&auto=format&fit=crop&q=80',
@@ -170,7 +170,7 @@ function AureluneApp() {
                   <img src={slide.thumb} alt="Preview thumb" className="tag-thumb" />
                   <div className="tag-meta">
                     <h4>{slide.title}</h4>
-                    <span>€ {slide.price.toFixed(2)}</span>
+                    <span>₹ {slide.price.toLocaleString('en-IN')}</span>
                   </div>
                 </div>
               </div>
@@ -256,7 +256,7 @@ function AureluneApp() {
 
               <div className="grid-meta">
                 <h3 className="grid-product-name">{prod.name}</h3>
-                <span className="grid-product-price">€ {prod.price.toFixed(2)}</span>
+                <span className="grid-product-price">₹ {prod.price.toLocaleString('en-IN')}</span>
               </div>
             </div>
           ))}
@@ -330,7 +330,7 @@ function AureluneApp() {
                     <div className="bag-item-details">
                       <div className="bag-item-top">
                         <h4>{item.product.name}</h4>
-                        <span className="bag-item-price">€ {(item.product.price * item.quantity).toFixed(2)}</span>
+                        <span className="bag-item-price">₹ {(item.product.price * item.quantity).toLocaleString('en-IN')}</span>
                       </div>
                       <span className="bag-item-size">Size: {item.size}</span>
                       <span className="bag-item-qty">Qty: {item.quantity}</span>
@@ -352,7 +352,7 @@ function AureluneApp() {
             <div className="bag-footer">
               <div className="bag-summary-line">
                 <span>SUBTOTAL</span>
-                <span>€ {bagTotal.toFixed(2)}</span>
+                <span>₹ {bagTotal.toLocaleString('en-IN')}</span>
               </div>
               <div className="bag-summary-line">
                 <span>SHIPPING</span>
@@ -386,7 +386,7 @@ function AureluneApp() {
               <div className="modal-info-pane">
                 <span className="modal-label">COLLECTION PIECE</span>
                 <h2 className="modal-title">{detailProduct.name}</h2>
-                <span className="modal-price">€ {detailProduct.price.toFixed(2)}</span>
+                <span className="modal-price">₹ {detailProduct.price.toLocaleString('en-IN')}</span>
                 
                 <hr className="modal-divider" />
                 
